@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                     displayCurrentPlayer.innerHTML = currentPlayer
                     //if the square below your current square is not taken, you can't go there
-                } else alert('cant go heree')
+                } else alert('cant go here')
             }
         })(i)
 
