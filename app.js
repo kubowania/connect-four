@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const displayCurrentPlayer = document.querySelector('#current-player')
     let currentPlayer = 1
 
-    for (var i = 0, len = squares.length; i < len; i++)
+    for (let i = 0, len = squares.length; i < len; i++)
 
     (function(index){
     //add an onclick to each square in your grid
@@ -46,10 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
         ];
         //now take the 4 values in earch winningArray & plug them into the squares values 
         for(let y = 0; y < winningArrays.length; y++) {
-            const square1 = squares[winningArrays[y][0]];
-            const square2 = squares[winningArrays[y][1]];
-            const square3 = squares[winningArrays[y][2]];
-            const square4 = squares[winningArrays[y][3]];
+            const square1 = squares[winningArrays[y][0]]
+            const square2 = squares[winningArrays[y][1]]
+            const square3 = squares[winningArrays[y][2]]
+            const square4 = squares[winningArrays[y][3]]
 
             //now check those arrays to see if they all have the class of player-one
             if(square1.classList.contains('player-one') &&
