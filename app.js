@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     displayCurrentPlayer.innerHTML = currentPlayer
                 }
                 //if the square below your current square is not taken, you can't go there
-                } else alert('cant go here')
-            }
+              } else alert('cant go here')
+          }
     })(i)
     
     //Part 2 below, split from the above for learning purposes, to have taking a go as one section, and checking for matches as the 2nd section.
