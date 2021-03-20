@@ -24,10 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     currentPlayer = 1
                     displayCurrentPlayer.innerHTML = currentPlayer
                 }
-                //if the sqaure below your current swqaure is not taken, you can't go there
+                //if the square below your current square is not taken, you can't go there
                 } else alert('cant go here')
             }
     })(i)
+    
+    //Part 2 below, split from the above for learning purposes, to have taking a go as one section, and checking for matches as the 2nd section.
 
     //check the board for a win or lose
     function checkBoard() {
