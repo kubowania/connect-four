@@ -9,10 +9,9 @@ Connect Four (also known as Four Up, Plot Four, Find Four, Four in a Row, Four i
 
 In this repo, I will be putting extra focus on for loops. If you want to learn how to use for loops effectively, please have a look at my code.
 
-## What inbuilt functions are we going to focus on?
+## What are we going to focus on?
 * for loops
 * addEventListener
-* setInterval
 * document.querySelector
 * arrow functions
 
