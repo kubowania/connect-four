@@ -106,6 +106,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  function checkDraw() {
+    for (let x = 0; x < squares.length; x++) {
+      if(!squares[x].classList.contains('taken')) {
+        console.log(squares[x])
+        return false
+      }
+    }
+    return true
+  }
+
   for (let i = 0; i < squares.length; i++) {
     squares[i].onclick = () => {
       //if the square below your current square is taken, you can go ontop of it
@@ -119,10 +129,15 @@ document.addEventListener('DOMContentLoaded', () => {
           squares[i].classList.add('taken')
           squares[i].classList.add('player-two')
           currentPlayer = 1
-          displayCurrentPlayer.innerHTML = currentPlayer        
+          displayCurrentPlayer.innerHTML = currentPlayer
         } 
-      } else alert('cant go here')
+      } else alert('cant go here')  
       checkBoard()
+      
+      if(checkDraw()) {
+        alert('DRAW!')
+      }
+        
     }
   }
   
