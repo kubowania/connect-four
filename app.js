@@ -109,7 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
   function checkDraw() {
     for (let x = 0; x < squares.length; x++) {
       if(!squares[x].classList.contains('taken')) {
-        console.log(squares[x])
         return false
       }
     }
